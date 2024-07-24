@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "FPT Exam Schedule Calendar",
+    "version": "1.0",
+    "description": "Adds a simple calendar view to the FPT University exam schedule page.",
+    "permissions": [
+      "https://fap.fpt.edu.vn/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://fap.fpt.edu.vn/Exam/ScheduleExams.aspx"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }

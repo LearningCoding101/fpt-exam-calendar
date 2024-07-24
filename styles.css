@@ -1,0 +1,40 @@
+#exam-calendar {
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  border: 1px solid #ccc;
+  padding: 5px;
+  min-height: 100px;
+  position: relative;
+}
+
+.day-number {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: bold;
+}
+
+.exam-event {
+  background-color: #e6f3ff;
+  border: 1px solid #b8daff;
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin-top: 20px;
+  font-size: 12px;
+}
